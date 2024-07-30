@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookman Ossam SANA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dynamic.css">
+    <link rel="stylesheet" href="mainly.css">
+    <script>document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});</script><style>.jw-album-image img, .jw-element-image img { pointer-events: none; -webkit-touch-callout: none; }.pswp__share-tooltip .pswp__share--download { display: none; }</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body style="background-color:rgb(240, 242, 243);">
+    <header >
+
+        <nav class="navbar">
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+              <li ><a href="index.html">home</a></li>
+              <li ><a href="about.html">about</a></li>
+              <li class="surbrillance"><a href="portfolio.html">portfolio</a></li>
+              <li onclick=pushcontact()><a href="#">contact</a></li>
+            </ul>
+            <ul class="sidebar2">
+              <li class="logo"><a href="#"><img id="logos" class="max-w-[100px] max-h-[40px]" src="logo4.png" alt="image"></a></li>
+              <li class="hideOnMobile navItem"><a href="index.html">home</a></li>
+              <li class="hideOnMobile "><a href="about.html">about</a></li>
+              <li class="hideOnMobile surbrillance"><a href="portfolio.html">portfolio</a></li>
+              <li class="hideOnMobile navItem" onclick=pushcontact()><a href="#contact">contact</a></li>
+              <li class="menu-button " onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+          </nav>
+        
+          <script>
+            function showSidebar(){
+              const sidebar = document.querySelector('.sidebar')
+              sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+              const sidebar = document.querySelector('.sidebar')
+              sidebar.style.display = 'none'
+            }
+
+            function pushcontact(){
+                const pathname2=window.location.pathname;
+                const pagename2=pathname.split("/").pop();
+                const pathname3=window.location.pathname.replace("portfolio.html","index.html#contact");
+                //pathname3.replace("portfolio.html","index.html#contact");
+                window.open(pathname3, '_top');
+                console.log(pathname3);
+                }
+          </script>
+        
+    <!-- window.open(pathname2);
+        <nav >     <script>document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});</script><style>.jw-album-image img, .jw-element-image img { pointer-events: none; -webkit-touch-callout: none; }.pswp__share-tooltip .pswp__share--download { display: none; }</style>
+
+            <ul>  
+                <li><a href="index.html">Home</a></li> <i class="fa-thin fa-chart-line"></i>
+                <li><a href="about.html">About</a></li> <i class="fa-thin fa-chart-line-down"></i>
+                <li ><a href="portfolio.html">Portfolio</a></li> 
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> class="fixed"
+    -->
+    
+   
+    </header>
+
+    <section class="home" id="home">
+        <div class="container">
+            
+            <div class="intro-text">
+                <div class="tokyo_tm_home w-full min-h-[100vh] clear-both flex items-center justify-center relative">
+                    <div class="home_content flex items-center">
+                        <div class="avatar min-w-[300px] min-h-[300px] relative rounded-full" data-type="wave" > 
+                            <div class="image absolute inset-0 bg-no-repeat bg-center bg-cover" data-img-url="LookmanOssamSANA.jpg" style="background-image: url(&quot;LookmanOssamSANA.jpg&quot;);"></div>
+                        </div>
+                        <!--<div class="details ml-[10px]">
+                            <h5 class="name text-[11px] font-extrabold  mb-[6px]" style="color: rgb(35, 50, 86);">
+                                Lookman Ossam SANA&copy; 
+                            </h5>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <section  class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="projects"><h2>Projects</h2></div>
+            <div class="experience-grid">
+                <div class="experience">
+                    <h3>Web Development & Data management  <span class="details-link" onclick="toggleDetails('coficab-details')">Details</span></h3>
+                    <div id="coficab-details" class="details visible">
+                        <p><i class="fas fa-check-circle"></i> Creation of an innovative web solution for training management, optimizing HR processes and team skills development; allows to manage COFICAB’s staff of 200+ persons; Collected, Stored & processed data in order to Generate 10+ different Intelligent graphs from stored data.
+                            Technologies: Laravel | Angular | Mysql</p>
+                        <div class="carousel-vertical" id="coficab-carousel">
+                            <img src="coficab1.png" alt="Capture d'écran COFICAB 1">
+                            <img src="coficab2.png" alt="Capture d'écran COFICAB 2">
+                            <img src="coficab3.png" alt="Capture d'écran COFICAB 3">
+                            <img src="coficab4.png" alt="Capture d'écran COFICAB 4">
+                            <img src="coficab5.png" alt="Capture d'écran COFICAB 5">
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <h3>Business Intelligence & Data Engineering  <i class="fa-solid fa-chart-user"></i>  <span class="details-link" onclick="toggleDetails('bitp-details')">Details</span></h3>
+                    <div id="bitp-details" class="details visible">
+                        <p><i class="fas fa-check-circle"></i> dashboards based on data from a network of mutual insurance branches. Performed analyses such as number of contracts obtained by region;
+                            sales achieved by region; year-on-year performance; progress in relation to the target set; the month-by-month change in rendering compared with the previous year; etc.</p>
+                        <p>Technologies: Talend, Power BI</p>
+                        <div class="carousel-vertical" id="bitp-carousel">
+                            <img src="BITP1.png" alt="Screenshoot BI Project 1">
+                            <img src="BITP2.png" alt="Screenshoot BI Project 2">
+                            <img src="BITP3.png" alt="Screenshoot BI Project 3">
+                            <img src="BITP4.png" alt="Screenshoot BI Project 4">
+                            <img src="BITP5.png" alt="Screenshoot BI Project 5">
+                            <img src="BITP6.png" alt="Screenshoot BI Project 6">
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <h3>Data Science: Sign Language Interpretation  <i class="fa-thin fa-brain-arrow-curved-right"></i>  <span class="details-link" onclick="toggleDetails('sign-details')">Détails</span></h3>
+                    <div id="sign-details" class="details visible">
+                        <p><i class="fas fa-check-circle"></i> An application which uses OpenCV to translate signs made by deaf and dumb into understandable texts.</p>
+                        <p>Technologies: Jupyter, Machine learning algorithms</p>
+                        <div class="carousel-vertical" id="sign-carousel">
+                            <img src="Sign1.png" alt="Screenshoot Sign Language Project 1">
+                            <img src="Sign2.png" alt="Screenshoot Sign Language Project 2">
+                            <img src="Sign3.png" alt="Screenshoot Sign Language Project 3">
+                            <img src="Sign4.png" alt="Screenshoot Sign Language Project 4">
+                            <img src="Sign5.png" alt="Screenshoot Sign Language Project 5">
+                            <img src="Sign6.png" alt="Screenshoot Sign Language Project 6">
+                            <img src="Sign7.png" alt="Screenshoot Sign Language Project 7">
+                            <img src="Sign8.png" alt="Screenshoot Sign Language Project 8">
+                            <img src="Sign9.png" alt="Screenshoot Sign Language Project 9">
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <h3>Business Intelligence & Data Engineering  <i class="fa-regular fa-chart-line"> </i>  <span class="details-link" onclick="toggleDetails('qlik&talend-details')">Détails</span></h3>
+                    <div id="qlik&talend-details" class="details visible">
+                        <p><i class="fas fa-check-circle"></i> dashboards based on data from a network of mutual insurance branches. Performed analyses such as number of contracts obtained by region;
+                            sales achieved by region; year-on-year performance; progress in relation to the target set; the month-by-month change in rendering compared with the previous year; etc.</p>
+                        <p>Technologies: QlikView, Talend</p>
+                        <div class="carousel-vertical" id="qlik&talend-carousel">
+                            <img src="Qlik&Talend1.png" alt="Screenshoot QlikVew & Talend Project 1">
+                            <img src="Qlik&Talend2.png" alt="Screenshoot QlikVew & Talend Project 2">
+                            <img src="Qlik&Talend3.png" alt="Screenshoot QlikVew & Talend Project 3">
+                            <img src="Qlik&Talend4.png" alt="Screenshoot QlikVew & Talend Project 4">
+                            <img src="Qlik&Talend5.png" alt="Screenshoot QlikVew & Talend Project 5">
+                            <img src="Qlik&Talend6.png" alt="Screenshoot QlikVew & Talend Project 6">
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <h3>Data Science: Domain of studies' prediction  <i class="fa-regular fa-microchip-ai"> </i>  <span class="details-link" onclick="toggleDetails('prediction-details')">Détails</span></h3>
+                    <div id="prediction-details" class="details visible">
+                        <p><i class="fas fa-check-circle"></i> An application which predict better field of studies for engineering cycle to preparatory classes students based on a bunch of questions.</p>
+                        <p>Technologies: Flask, Machine learning algorithms</p>
+                        <div class="carousel-vertical" id="prediction-carousel">
+                            <img src="Prediction1.png" alt="Screenshoot Domain of studies' Prediction Project 1">
+                            <img src="Prediction2.png" alt="Screenshoot Domain of studies' Prediction Project 2">
+                            <img src="Prediction3.png" alt="Screenshoot Domain of studies' Prediction Project 3">
+                            <img src="Prediction4.png" alt="Screenshoot Domain of studies' Prediction Project 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <h3>Business Intelligence & Data Engineering  <i class="fa-regular fa-chart-line-up"> </i>  <span class="details-link" onclick="toggleDetails('bi&erp-details')">Détails</span></h3>
+                    <div id="bi&erp-details" class="details visible">
+                        <p><i class="fas fa-check-circle"></i> dashboards based on data from a market center. Performed analyses such 
+                            sales achieved by region; year-on-year performance; progress in relation to the target set; the month-by-month change in rendering compared with the previous year; best selling product; etc.</p>
+                        <p>Technologies: Pentaho, Power BI</p>
+                        <div class="carousel-vertical" id="bi&erp-carousel">
+                            <img src="BI&ERP1.png" alt="Screenshoot Power BI & Talend Project 1">
+                            <img src="BI&ERP2.png" alt="Screenshoot Power BI & Talend Project 2">
+                            <img src="BI&ERP3.png" alt="Screenshoot Power BI & Talend Project 3">
+                            <img src="BI&ERP4.png" alt="Screenshoot Power BI & Talend Project 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+   
+
+    <footer>
+        <p>Copyright © 2024 Lookman Ossam SANA. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

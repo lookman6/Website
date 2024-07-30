@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookman Ossam SANA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dynamic.css">
+    <link rel="stylesheet" href="mainly.css">
+    <script>document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});</script><style>.jw-album-image img, .jw-element-image img { pointer-events: none; -webkit-touch-callout: none; }.pswp__share-tooltip .pswp__share--download { display: none; }</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body style="background-color:rgb(240, 242, 243);">
+    <header >
+
+        <nav class="navbar">
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+              <li ><a href="index.html" class="active">home</a></li>
+              <li class="surbrillance"><a href="about.html" class="active ">about</a></li>
+              <li ><a href="portfolio.html" class="active">portfolio</a></li>
+              <li onclick=pushcontact()><a href="#" class="active">contact</a></li>
+            </ul>
+            <ul class="sidebar2">
+                <li class="logo"><a href="#"><img id="logos" class="max-w-[100px] max-h-[40px]" src="logo4.png" alt="image"></a></li>
+              <li class="hideOnMobile navItem"><a href="index.html">home</a></li>
+              <li class="hideOnMobile surbrillance"><a href="about.html">about</a></li>
+              <li class="hideOnMobile "><a href="portfolio.html">portfolio</a></li>
+              <li class="hideOnMobile navItem" onclick=pushcontact()><a href="#contact">contact</a></li>
+              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+          </nav>
+        
+          <script>
+            function showSidebar(){
+              const sidebar = document.querySelector('.sidebar')
+              sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+              const sidebar = document.querySelector('.sidebar')
+              sidebar.style.display = 'none'
+            }
+
+            function pushcontact(){
+                const pathname2=window.location.pathname;
+                const pagename2=pathname.split("/").pop();
+                //const pathname3=window.location.pathname;
+                const pathname3=window.location.pathname.replace("about.html","index.html#contact");
+                //pathname3.replace("portfolio.html","index.html#contact");
+                window.open(pathname3, '_top');
+                console.log(pathname3);
+                }
+          </script>
+        
+   
+    
+   
+    </header>
+
+    <!--window.open(pathname2);<section class="home" id="home">
+        <div class="container">
+            
+            <div class="intro-text">
+                <div class="tokyo_tm_home w-full min-h-[100vh] clear-both flex items-center justify-center relative">
+                    <div class="home_content flex items-center">
+                        <div class="avatar min-w-[300px] min-h-[300px] relative rounded-full" data-type="wave"> 
+                            <div class="image absolute inset-0 bg-no-repeat bg-center bg-cover" data-img-url="LookmanOssamSANA.jpg" style="background-image: url(&quot;LookmanOssamSANA.jpg&quot;);"></div>
+                        </div>
+                    </div>
+                </div>
+            <div class="left-side">-->
+                <!--ca<img src="LookmanOssamSANA.jpg" alt="Lookman Ossam SANA">-->
+                
+               
+                    <!--<h1>Lookman Ossam SANA</h1>-->
+                    <!--<p>Ingénieur Informatique passionné par le développement et la technologie.</p>
+                    <p>Je suis spécialisé dans le développement web avec des compétences en Angular, Spring Boot, Laravel, et bien plus encore. J'ai des compétences solides en conception et développement, je fais du code optimisé et je suis familier avec les design patterns du GoF. Je fais également du développement Wordpress et du SEO pour ceux qui le souhaitent.</p>
+                --><!--<a href="#contact" class="btn">Contactez-moi</a>ca-->
+              <!--  </div>
+            </div>
+        </div>
+    </section>-->
+
+<!-------------------------------------------------------------------------------->
+
+<div class="container">
+    <div class="tokyo_tm_about w-full h-auto clear-both float-left py-[100px] px-0">
+        <div class="tokyo_tm_title w-full h-auto clear-both float-left mb-[62px]">
+            <div class="title_flex w-full h-auto clear-both flex justify-between items-end">
+                <div class="left">
+                    <span class="inline-block bg-[rgba(0,0,0,.04)] uppercase py-[4px] px-[10px] font-semibold text-[12px] text-[#333] font-montserrat tracking-[0px] mb-[11px]">
+                        About
+                    </span>
+                    <h3 class="font-extrabold font-montserrat" style="color: rgb(35, 50, 86);">
+                        About Me
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="top_author_image w-full h-auto clear-both float-left relative mb-[35px]">
+            <img class="min-w-full" src="about.JPG" alt="image">
+        </div>
+        <div class="about_title w-full h-auto clear-both float-left border-solid border-[#DFDFDF] border-b pb-[20px] mb-[30px]">
+            <h3 class="text-[22px] font-bold" style="color: rgb(35, 50, 86);">
+                Lookman Ossam SANA
+            </h3>
+            <span>
+                R&D Engineer in Oracle JD Edwards | Mckinsey Forward Program
+            </span>
+        </div>
+        <div class="about_text w-full h-auto clear-both float-left border-solid border-[#DFDFDF] border-b pb-[31px] mb-[30px]">
+            <p class="mb-[11px]">
+                Lookman is a dynamic young professional with a passion for strategy, leadership, digitalization, and youth empowerment. Currently, Lookman is an R&D Engineer at Colas Digital Solutions, a member of the Bouygues Group. In his role, he analyses and coordinates meetings with clients worldwide to address their needs and develop innovative solutions.
+            </p>
+            <p class="mb-[11px]">
+                An alumnus of the prestigious Ecole Nationale des Sciences Appliquées de Tanger (ENSAT) in Morocco, Lookman held several leadership roles during his studies. In 2022, he successfully coordinated two flagship events: the JIG, the main event for international students, and the Cultural Club Day.
+            </p>
+            <p class="mb-[11px]">
+                Lookman’s academic journey is marked by excellence. In 2018, he was among the top students in the national baccalaureate exam and the best student at his school. His outstanding performance earned him scholarships from both the government of Burkina Faso and the Kingdom of Morocco to pursue his studies in Morocco.
+            </p>
+            <p class="mb-[11px]">
+                Beyond academics, Lookman has completed leadership certifications from Harvard Kennedy School, Harvard Business School, and Aspire Institute. In recognition of his dedication and impact, he was selected as one of 150 young African leaders to participate in the Bridge Africa Summit in Benguerir in 2024.
+            </p>
+            <p class="mb-[11px]">
+                What matters more in the career of Lookman, is creating impact, and improving people’s lives.
+            </p>
+            <p class="mb-[11px]">
+                <span> Connect with me: </span>
+                <span> <a href="https://www.linkedin.com/in/lookmanossamsana" target="_blank"><i style="font-size:24px;color:rgb(9, 9, 237)" class="fab fa-linkedin"></i>  </a>  </span>
+                <span> <a href="https://www.twitter.com/lookmansana" target="_blank"><i style="font-size:24px;color:rgb(8, 8, 227)" class="fab fa-twitter"></i> </a>   </span>
+                <span> <a href="https://www.instagram.com/lookmanossamsana/" target="_blank"><i style="font-size:24px;color:red" class="fab fa-instagram"></i> </a>   </span>
+                <span> <a href="https://www.facebook.com/profile.php?id=100005354374933&mibextid=LQQJ4d" target="_blank"><i style="font-size:24px;color:rgb(10, 10, 240)" class="fab fa-facebook-f"></i> </a> </span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-------------------------&copy; ------------------------------------------------------->
+
+    <section class="about" id="about">
+        <div class="container">
+
+            <div class="competences"><h2>Competences</h2></div>
+            <div class="skills-grid">
+                <div><i class="fas fa-code"></i> Excel</div>
+                <div><i class="fas fa-code"></i> Powerpoint</div>
+                <div><i class="fas fa-code"></i> Word</div>
+                <div><i class="fas fa-code"></i> French</div>
+                <div><i class="fas fa-code"></i> English-IELTS</div>
+                <div><i class="fas fa-code"></i> Spanish</div>
+                <div><i class="fas fa-code"></i> Problem Solving</div>
+                <div><i class="fas fa-code"></i> TeamWork</div>
+                <div><i class="fas fa-code"></i> Critical Thinking</div>
+                <div><i class="fas fa-code"></i> Scrum - Agile Methods</div>
+                <div><i class="fas fa-code"></i> UML</div>
+                <div><i class="fas fa-code"></i> Design Pattern - GOF</div>
+                <div><i class="fas fa-code"></i> Ms Project</div>
+                <div><i class="fas fa-code"></i> Gantt Project</div>
+                <div><i class="fas fa-code"></i> Trello</div>
+                <div><i class="fas fa-code"></i> Regex</div>
+                <div><i class="fas fa-code"></i> NLTK</div>
+                <div><i class="fas fa-code"></i> Machine Learning</div>
+                <div><i class="fas fa-code"></i> PowerBI</div>
+                <div><i class="fas fa-code"></i> QlikView</div>
+                <div><i class="fas fa-code"></i> Orange</div>
+                <div><i class="fas fa-code"></i> Knime</div>
+                <div><i class="fas fa-code"></i> Talend</div>
+                <div><i class="fas fa-code"></i> Pentaho</div>
+                <div><i class="fas fa-code"></i> MySQL</div>
+                <div><i class="fas fa-code"></i> SQLServer</div>
+                <div><i class="fas fa-code"></i> Oracle</div>
+                <div><i class="fas fa-code"></i> Neo4J</div>
+                <div><i class="fas fa-code"></i> MongoDB</div>
+                <div><i class="fas fa-code"></i> JAVA</div>
+                <div><i class="fas fa-code"></i> C</div>
+                <div><i class="fas fa-code"></i> C++</div>
+                <div><i class="fas fa-code"></i> C#</div>
+                <div><i class="fas fa-code"></i> Python</div>
+                <div><i class="fas fa-code"></i> PHP</div>
+                <div><i class="fas fa-code"></i> JavaScript</div>
+                <div><i class="fas fa-code"></i> Event Rules</div>
+                <div><i class="fas fa-code"></i> Angular</div>
+                <div><i class="fas fa-code"></i> Spring Boot</div>
+                <div><i class="fas fa-code"></i> Laravel</div>
+                <div><i class="fas fa-code"></i> ASP.Net</div>
+                <div><i class="fas fa-code"></i> JavaFX</div>
+                <div><i class="fas fa-code"></i> Android studio</div>
+                <div><i class="fas fa-code"></i> Flutter</div>
+                <div><i class="fas fa-code"></i> JSF, JEE</div>
+                <div><i class="fas fa-code"></i> XML, XSLT, XSLFO, XQuery, XPath</div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <footer>
+        <p>Copyright © 2024 Lookman Ossam SANA. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

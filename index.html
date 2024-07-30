@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookman Ossam SANA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="miscellaneous.css">
+    <link rel="stylesheet" href="dynamic.css">
+    <link rel="stylesheet" href="mainly.css">
+    
+    <script>document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});</script><style>.jw-album-image img, .jw-element-image img { pointer-events: none; -webkit-touch-callout: none; }.pswp__share-tooltip .pswp__share--download { display: none; }</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+   <script type="text/javascript">
+      (function () {
+        emailjs.init("bJ0QC5tSpYgKNSxLY");
+      })();
+    </script>
+</head>
+<body style="background-color:rgb(240, 242, 243);">
+    <header >
+
+        <nav class="navbar">
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+              <li class="surbrillance"><a href="index.html" >home</a></li>
+              <li ><a href="about.html" >about</a></li>
+              <li ><a href="portfolio.html" >portfolio</a></li>
+              <li onclick=pushcontact()><a href="#contact">contact</a></li>
+            </ul>
+            <ul class="sidebar2">
+              <li class="logo"><a href="#"><img id="logos" class="max-w-[100px] max-h-[40px]" src="logo4.png" alt="image"></a></li>
+              <li class="hideOnMobile navItem surbrillance"><a href="index.html">home</a></li>
+              <li class="hideOnMobile "><a href="about.html">about</a></li>
+              <li class="hideOnMobile "><a href="portfolio.html">portfolio</a></li>
+              <li class="hideOnMobile navItem" onclick=pushcontact()><a href="#contact">contact</a></li>
+              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+          </nav>
+        
+          <script>
+            function showSidebar(){
+              const sidebar = document.querySelector('.sidebar')
+              sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+              const sidebar = document.querySelector('.sidebar')
+              sidebar.style.display = 'none'
+            }
+
+            function pushcontact(){
+                const pathname2=window.location.pathname;
+                const pagename2=pathname.split("/").pop();
+                const pathname3=window.location.pathname;
+                pathname3.replace("index.html","index.html#contact");
+                console.log(pathname3);
+                
+            }
+          </script>
+        
+    <!-- window.open(pathname2);
+        <nav >
+                <script>document.addEventListener('contextmenu',function(e){e.preventDefault();e.stopPropagation();});document.addEventListener('copy',function(e){e.preventDefault();e.stopPropagation();});document.addEventListener('cut',function(e){e.preventDefault();e.stopPropagation();});</script><style>.jw-album-image img, .jw-element-image img { pointer-events: none; -webkit-touch-callout: none; }.pswp__share-tooltip .pswp__share--download { display: none; }</style>
+
+            <div class="logo" data-type="image"> 
+                <a href="#">
+                    <img class="max-w-[100px] max-h-[40px]" src="assets/img/logo/logo.png" alt="image">
+                    <h3 class="font-black font-poppins text-[25px] tracking-[4px]">
+                        MaudoJallow
+                    </h3>
+                </a>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li ><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> class="fixed"
+    -->
+    
+   
+    </header>
+    
+    <section id="home">
+        <div class="container">
+            
+            <div class="intro-text">
+                <div class="tokyo_tm_home w-full min-h-[100vh] clear-both flex items-center justify-center relative">
+                    <div class="home_content flex items-center">
+                        <div class="avatar min-w-[300px] min-h-[300px] relative rounded-full" data-type="wave"> 
+                            <div class="image absolute inset-0 bg-no-repeat bg-center bg-cover" data-img-url="LookmanOssamSANA.jpg" style="background-image: url(&quot;LookmanOssamSANA.jpg&quot;);"></div>
+                        </div>
+                        <div class="details ml-[80px] dynam">
+                            <h3 class="name text-[55px] font-extrabold uppercase mb-[14px]" style="color: rgb(35, 50, 86);">
+                                Lookman .O
+                                <span>SANA</span>
+                            </h3>
+                            <p class="job font-montserrat font-medium max-w-[450px] mb-[25px]">
+                                "A consummate professional with the utmost academic and instinctive intelligence - a vast capacity to think with intense insight from a natural global mindset, yet with an intimate ability to focus his energy on sound economics and social development policy which empowers genuine freedoms for the poorest and the most vulnerable. This man has a heart of gold and a platinum mind, he is laden with integrity and full of gentle generosity - a maker of futures. What an honour to speak the truth about Maudo!"
+                            </p>
+                            <p class="job font-montserrat font-medium max-w-[450px] mb-[25px]">
+                                <i> 
+                                    - Lord Michael Hastings, Baron Hastings of Scarisbrick CBE
+                                </i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <div class="left-side">
+               
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            
+            <div class="contacts"><h2 >Contact</h2></div>
+            <!--<div class="tokyo_tm_title w-full h-auto clear-both float-left mb-[62px]"></div>-->
+            
+            <div class="pere clearfix">
+            <div class="enfant">
+            <div class="fields w-full float-left clear-both h-auto ">
+            <!--<div class="container border mt-3 bg-light"></div>
+                <div class="row"></div>-->
+                  <!--<div class="col-md-6 p-5  text-white" style="background-color: rgba(42, 65, 160, 0.478);">
+                    <h1>Hi there!</h1>
+                    <h4>
+                      Feel free to leave your word, I will kindly reply soon!
+                    </h4>
+                  </div>-->
+                  <!--<div class="col-md-6 border-left py-3"></div>-->
+                    <!--<h4 style="color: rgb(66, 78, 78); margin-bottom: 11px;">Feel free to leave your word, I will kingly reply soon!</h4>-->
+                    <div class="first w-full float-left">
+                    <ul class="list-none">
+                    <li class="w-full mb-[30px] float-left form-group">
+                      <!--<h5 for="name">Name</h5>-->
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Enter name"
+                        
+                      />
+                    </li>
+                    <li class="w-full mb-[30px] float-left form-group">
+                      <!--<h5 for="email">Email</h5>-->
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter email"
+                        
+                      />
+                    </li>
+                    </ul>
+                    </div>
+                    <div class="last ">
+                    <div class="form-group">
+                      <!--<h5 for="message">Message</h5>-->
+                      <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    </div>
+                    <button class="btn color" onclick="sendMail()" ><span>Send Message</span> </button>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/lookmanossamsana" target="_blank">Connect with me on <i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                  <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            </div>
+            </div>
+            </div>
+                
+               <!-- <div class="pere clearfix">
+                        <div class="enfant">
+                            <div class="fields w-full float-left clear-both h-auto ">
+                                <form class="contact_form" id="contact_form" ></form>
+                                    <div class="returnmessage" style="display: none;">
+                                        <span>Your message has been received, We will contact you soon.</span>
+                                    </div>
+                                    <div class="first w-full float-left">
+                                        <ul class="list-none">
+                                            <li class="w-full mb-[30px] float-left ">
+                                                <input class="color" name="name" id="name" type="text" placeholder="Name" required>
+                                            </li>
+                                            <li class="w-full mb-[30px] float-left ">
+                                                <input class="color" name="email" id="email" type="email" placeholder="Email" required>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="last ">
+                                        <textarea class="color" name="message" id="message" placeholder="Message"></textarea>
+                                    </div>
+                                    
+                                    <div class="tokyo_tm_button " data-position="left"><button class="color"  onclick="SendMail()">Send Message<span></span></button>
+                                    </div>
+                                
+                                <div class="linkedin">
+                                    <a href="https://www.linkedin.com/in/lookmanossamsana" target="_blank">Connect with me on <i class="fab fa-linkedin"></i> LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                 </div> -->
+                    
+                
+            
+        </div>
+    </section>
+
+    <footer>
+        <p> Copyright © 2024 Lookman Ossam SANA. All rights reserved.</p>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+    <script>
+
+        //Function to send the message when click on the form button 82c9f337-c219-46fc-a966-29b877665f2a
+
+        //function sendMessage(e){
+           // e.preventDefault();
+            
+
+           // Email.send({
+           // Host : "smtp.elasticemail.com",
+           // Username : "sanalookmanossam@gmail.com",
+           // Password : "6EBA0680A5BDEBC6DC25D15C22076EB2B7C1",
+           // To : "sanalookmanossam@gmail.com",
+           // From : document.getElementById('email').value,
+           // Subject : document.getElementById('name').value + " Sent a message from Lookman Online Website Contact Form",
+           // Body : document.getElementById('message').value
+            //}).then(
+            //message => alert(message)
+           //);
+
+    
+
+           // return true;
+
+        //}
+
+    
+
+    </script>
+
+</body>
+</html>
